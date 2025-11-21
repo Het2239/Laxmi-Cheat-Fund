@@ -1,0 +1,22 @@
+[
+    {
+        "id": "bs-uuid-1",
+        "userAddress": "0x1a2b3c4d5e6f7g8h9i0j",
+        "action": "BUY",
+        "currency": "BTC",
+        "amount": 0.1,
+        "totalUsd": 9500.00,
+        "priceUsd": 95000.00,
+        "timestamp": "2025-01-10T09:15:00Z"
+    },
+    {
+        "id": "bs-uuid-2",
+        "userAddress": "0x1a2b3c4d5e6f7g8h9i0j",
+        "action": "SELL",
+        "currency": "ETH",
+        "amount": 0.5,
+        "totalUsd": 1750.00,
+        "priceUsd": 3500.00,
+        "timestamp": "2025-01-12T16:45:00Z"
+    }
+]

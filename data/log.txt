@@ -1,0 +1,2 @@
+# Crypto Exchange Application Log
+# All user actions will be logged here
