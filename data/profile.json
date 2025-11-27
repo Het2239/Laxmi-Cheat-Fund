@@ -1,1 +1,52 @@
-[]
+[ {
+  "id" : "user-fb4b29aa-7667-4fa8-918b-0a3994b1c17d",
+  "name" : "John",
+  "lastname" : "Doe",
+  "email" : "john@example.com",
+  "phone" : "+1234567890",
+  "passwordHash" : "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+  "secretKeyHash" : "352eb735e0ba78c8c232cfc9d17b0f17cb8ccc844b2f541d85e91e13d8d1792a",
+  "address" : "dcf38b61fc4c0a27e05e",
+  "balances" : {
+    "BTC" : 0.0,
+    "SOL" : 0.0,
+    "USD" : 0.0,
+    "ETH" : 0.0,
+    "USDT" : 0.0
+  },
+  "createdAt" : "2025-11-25T23:28:41.028192629"
+}, {
+  "id" : "user-df152429-fe20-4f59-841c-65f8d90d879d",
+  "name" : "y",
+  "lastname" : "m",
+  "email" : "ym@example.com",
+  "phone" : "+1234567890",
+  "passwordHash" : "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+  "secretKeyHash" : "02982dfd212e1bedc79235893e940959b8048f3a56263b6db636876b362eebaf",
+  "address" : "c9fa9e8976c2c104a682",
+  "balances" : {
+    "BTC" : 0.0,
+    "SOL" : 0.0,
+    "USD" : 0.0,
+    "ETH" : 0.0,
+    "USDT" : 100.0
+  },
+  "createdAt" : "2025-11-25T23:29:16.322940427"
+}, {
+  "id" : "user-03c9d50b-e83d-48b1-8705-524bce7c79c7",
+  "name" : "hemakshi",
+  "lastname" : "j",
+  "email" : "hj@e.com",
+  "phone" : "+1234567890",
+  "passwordHash" : "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+  "secretKeyHash" : "4b687ea5fd076f97ce969a0018d60d801236fb481f572cec6f6994f5b7c82926",
+  "address" : "106bff2dd9f80991d0fd",
+  "balances" : {
+    "BTC" : 0.0,
+    "SOL" : 0.0,
+    "USD" : 890.9509490471471,
+    "ETH" : 0.0,
+    "USDT" : 0.0
+  },
+  "createdAt" : "2025-11-26T19:05:55.989377863"
+} ]

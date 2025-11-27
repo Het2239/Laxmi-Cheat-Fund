@@ -1,4 +1,4 @@
-package com.exchange.CryptoExchangeApplication;
+package com.exchange;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

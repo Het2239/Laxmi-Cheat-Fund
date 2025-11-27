@@ -1,1 +1,61 @@
-[]
+[ {
+  "id" : "tx-256d9d8c-382d-49ea-ad2b-d1e73568aaa1",
+  "type" : "BUY",
+  "fromAddress" : "dfd60d07abbf0847a098",
+  "toAddress" : "dfd60d07abbf0847a098",
+  "currency" : "BTC",
+  "amount" : 0.01,
+  "priceAtTradeUsd" : 95000.0,
+  "timestamp" : "2025-11-22T17:19:59.311505780",
+  "status" : "CONFIRMED"
+}, {
+  "id" : "tx-7bec834f-b6a9-42bf-82ea-6bf7055615f2",
+  "type" : "SELL",
+  "fromAddress" : "dfd60d07abbf0847a098",
+  "toAddress" : "dfd60d07abbf0847a098",
+  "currency" : "BTC",
+  "amount" : 0.01,
+  "priceAtTradeUsd" : 95095.095,
+  "timestamp" : "2025-11-22T17:20:46.297076530",
+  "status" : "CONFIRMED"
+}, {
+  "id" : "tx-fd646121-43d6-45f2-bb52-9dee2b98a0f8",
+  "type" : "BUY",
+  "fromAddress" : "106bff2dd9f80991d0fd",
+  "toAddress" : "106bff2dd9f80991d0fd",
+  "currency" : "BTC",
+  "amount" : 0.01,
+  "priceAtTradeUsd" : 94999.904809905,
+  "timestamp" : "2025-11-26T19:16:25.748909509",
+  "status" : "CONFIRMED"
+}, {
+  "id" : "tx-a8564b91-c101-437a-8dfb-d0e9baf52f3a",
+  "type" : "SELL",
+  "fromAddress" : "106bff2dd9f80991d0fd",
+  "toAddress" : "106bff2dd9f80991d0fd",
+  "currency" : "BTC",
+  "amount" : 0.01,
+  "priceAtTradeUsd" : 95094.99971461971,
+  "timestamp" : "2025-11-26T19:18:03.007739603",
+  "status" : "CONFIRMED"
+}, {
+  "id" : "tx-b02a2d6a-4edb-4a1a-a11e-79da301fc3ed",
+  "type" : "BUY",
+  "fromAddress" : "106bff2dd9f80991d0fd",
+  "toAddress" : "106bff2dd9f80991d0fd",
+  "currency" : "USDT",
+  "amount" : 100.0,
+  "priceAtTradeUsd" : 1.0,
+  "timestamp" : "2025-11-26T19:23:06.223361896",
+  "status" : "CONFIRMED"
+}, {
+  "id" : "tx-a33de732-4272-44d7-86eb-8766bb3c788e",
+  "type" : "TRANSFER",
+  "fromAddress" : "106bff2dd9f80991d0fd",
+  "toAddress" : "c9fa9e8976c2c104a682",
+  "currency" : "USDT",
+  "amount" : 100.0,
+  "priceAtTradeUsd" : null,
+  "timestamp" : "2025-11-26T19:23:30.194427874",
+  "status" : "CONFIRMED"
+} ]

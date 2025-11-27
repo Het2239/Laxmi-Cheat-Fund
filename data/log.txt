@@ -1,2 +1,40 @@
 # Crypto Exchange Application Log
 # All user actions will be logged here
+2025-11-22T13:49:10Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | REGISTER | New user registered: het@ex.com | N/A
+2025-11-22T13:50:03Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | LOGIN | User logged in: het@ex.com | N/A
+2025-11-22T13:50:06Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | LOGIN | User logged in: het@ex.com | N/A
+2025-11-22T13:52:36Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | LOGIN | User logged in: het@ex.com | N/A
+2025-11-22T14:00:20Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | LOGIN | User logged in: het@ex.com | N/A
+2025-11-22T17:17:34Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | LOGIN | User logged in: het@ex.com | N/A
+2025-11-22T17:18:09Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | DEPOSIT | Added 1000.00 USD to balance | N/A
+2025-11-22T17:19:59Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | BUY | BUY | 0.010000 BTC @ 95000.00 USD | tx-256d9d8c-382d-49ea-ad2b-d1e73568aaa1
+2025-11-22T17:20:46Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | SELL | SELL | 0.010000 BTC @ 95095.10 USD | tx-7bec834f-b6a9-42bf-82ea-6bf7055615f2
+2025-11-22T17:23:04Z | INFO | user-183ebabb-c3e4-48df-a0a3-120955c9ca4f | DELETE_PROFILE | Profile deleted. Total balance redeemed: 1000.95 USD | N/A
+2025-11-25T23:28:41Z | INFO | user-fb4b29aa-7667-4fa8-918b-0a3994b1c17d | REGISTER | New user registered: john@example.com | N/A
+2025-11-25T23:29:16Z | INFO | user-df152429-fe20-4f59-841c-65f8d90d879d | REGISTER | New user registered: ym@example.com | N/A
+2025-11-25T23:29:50Z | INFO | user-df152429-fe20-4f59-841c-65f8d90d879d | LOGIN | User logged in: ym@example.com | N/A
+2025-11-25T23:37:45Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | REGISTER | New user registered: hj@e.com | N/A
+2025-11-25T23:38:42Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-25T23:50:05Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T08:53:14Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T08:58:43Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T08:58:50Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T08:58:52Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T08:58:54Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T08:58:55Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T09:01:46Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T09:06:10Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T09:08:50Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T09:30:58Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T09:44:50Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T09:52:26Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T09:56:49Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T14:50:07Z | INFO | user-7eaed3e7-e63b-4447-9fe6-06317200ecd8 | DELETE_PROFILE | Profile deleted. Total balance redeemed: 0.00 USD | N/A
+2025-11-26T19:05:56Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | REGISTER | New user registered: hj@e.com | N/A
+2025-11-26T19:06:08Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | LOGIN | User logged in: hj@e.com | N/A
+2025-11-26T19:12:21Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | DEPOSIT | Added 1000.00 USD to balance | N/A
+2025-11-26T19:13:16Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | WITHDRAW | Redeemed 10.00 USD from balance | N/A
+2025-11-26T19:16:25Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | BUY | BUY | 0.010000 BTC @ 94999.90 USD | tx-fd646121-43d6-45f2-bb52-9dee2b98a0f8
+2025-11-26T19:18:03Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | SELL | SELL | 0.010000 BTC @ 95095.00 USD | tx-a8564b91-c101-437a-8dfb-d0e9baf52f3a
+2025-11-26T19:23:06Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | BUY | BUY | 100.000000 USDT @ 1.00 USD | tx-b02a2d6a-4edb-4a1a-a11e-79da301fc3ed
+2025-11-26T19:23:30Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | TRANSFER | TRANSFER | 100.000000 USDT  | tx-a33de732-4272-44d7-86eb-8766bb3c788e

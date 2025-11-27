@@ -1,1 +1,46 @@
-[]
+[ {
+  "id" : "bs-bdf81085-afbd-429e-b668-f6668f0fb2dc",
+  "userAddress" : "dfd60d07abbf0847a098",
+  "action" : "BUY",
+  "currency" : "BTC",
+  "amount" : 0.01,
+  "totalUsd" : 950.0,
+  "priceUsd" : 95000.0,
+  "timestamp" : "2025-11-22T17:19:59.314855740"
+}, {
+  "id" : "bs-5e6ef7a1-2f4f-4e0c-91e3-d17fec57715b",
+  "userAddress" : "dfd60d07abbf0847a098",
+  "action" : "SELL",
+  "currency" : "BTC",
+  "amount" : 0.01,
+  "totalUsd" : 950.95095,
+  "priceUsd" : 95095.095,
+  "timestamp" : "2025-11-22T17:20:46.299870352"
+}, {
+  "id" : "bs-3bfe6a5c-e51f-41db-9cc9-043f66184200",
+  "userAddress" : "106bff2dd9f80991d0fd",
+  "action" : "BUY",
+  "currency" : "BTC",
+  "amount" : 0.01,
+  "totalUsd" : 949.99904809905,
+  "priceUsd" : 94999.904809905,
+  "timestamp" : "2025-11-26T19:16:25.753120022"
+}, {
+  "id" : "bs-c53fd090-5b57-4346-832a-fabd388aef8e",
+  "userAddress" : "106bff2dd9f80991d0fd",
+  "action" : "SELL",
+  "currency" : "BTC",
+  "amount" : 0.01,
+  "totalUsd" : 950.9499971461971,
+  "priceUsd" : 95094.99971461971,
+  "timestamp" : "2025-11-26T19:18:03.008464447"
+}, {
+  "id" : "bs-38b74329-7d43-4291-86a7-8f9f601dd207",
+  "userAddress" : "106bff2dd9f80991d0fd",
+  "action" : "BUY",
+  "currency" : "USDT",
+  "amount" : 100.0,
+  "totalUsd" : 100.0,
+  "priceUsd" : 1.0,
+  "timestamp" : "2025-11-26T19:23:06.224010183"
+} ]
