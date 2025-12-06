@@ -23,6 +23,9 @@ public class AuthService {
     private JwtUtil jwtUtil;
     
     @Autowired
+    private PriceService priceService;
+    
+    @Autowired
     private WalletService walletService;
     
     // Register a new user
@@ -106,18 +109,19 @@ public class AuthService {
         // Liquidate all crypto holdings to USD
         double totalUsdValue = user.getBalance("USD");
         
-        // Get current prices and convert all crypto to USD
+        // Auto-liquidate all crypto holdings to USD
         for (String currency : new String[]{"BTC", "ETH", "USDT", "SOL"}) {
-            double balance = user.getBalance(currency);
-            if (balance > 0) {
-                double price = com.exchange.utils.PriceSimulator.getPrice(currency);
-                double usdValue = balance * price;
-                totalUsdValue += usdValue;
+            Double balance = user.getBalance(currency);
+            if (balance != null && balance > 0) {
+                double currentPrice = priceService.getPrice(currency);
+                double usdValue = balance * currentPrice;
+                user.setBalance(currency, 0.0);
+                user.addBalance("USD", usdValue);
+                totalUsdValue += usdValue; // Update totalUsdValue with liquidated amount
                 
-                // Log the auto-sell
-                LogWriter.logAction(user.getId(), "AUTO_SELL", 
-                    String.format("%.6f %s @ %.2f USD = %.2f USD", balance, currency, price, usdValue), 
-                    "AUTO");
+                LogWriter.logAction(user.getId(), "AUTO_LIQUIDATE", 
+                    String.format("Liquidated %.8f %s to %.2f USD at price %.2f", 
+                        balance, currency, usdValue, currentPrice), "N/A");
             }
         }
         
