@@ -7,7 +7,6 @@ import com.exchange.repository.BuySellRepository;
 import com.exchange.repository.ProfileRepository;
 import com.exchange.repository.TransactionRepository;
 import com.exchange.utils.LogWriter;
-import com.exchange.utils.PriceSimulator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +26,9 @@ public class TradeService {
     @Autowired
     private WalletService walletService;
     
+    @Autowired
+    private PriceService priceService;
+    
     // Buy cryptocurrency
     public Transaction buyCrypto(String email, String currency, double amount) {
         if (amount <= 0) {
@@ -38,8 +40,8 @@ public class TradeService {
             throw new RuntimeException("User not found");
         }
         
-        // Get current price
-        double currentPrice = PriceSimulator.getPrice(currency);
+        // Get current price from PriceService
+        double currentPrice = priceService.getPrice(currency);
         
         // Calculate total cost in USD
         double totalCost = amount * currentPrice;
@@ -55,8 +57,8 @@ public class TradeService {
         // Add cryptocurrency
         user.addBalance(currency, amount);
         
-        // Update price (price increases on buy)
-        double newPrice = PriceSimulator.updatePriceOnBuy(currency, amount);
+        // Apply trade impact (buying pushes price UP)
+        priceService.applyTradeImpact(currency, "BUY", amount);
         
         // Save user
         profileRepository.updateUser(user);
@@ -106,8 +108,8 @@ public class TradeService {
             throw new RuntimeException("Insufficient " + currency + " balance");
         }
         
-        // Get current price
-        double currentPrice = PriceSimulator.getPrice(currency);
+        // Get current price from PriceService
+        double currentPrice = priceService.getPrice(currency);
         
         // Calculate total USD to receive
         double totalUsd = amount * currentPrice;
@@ -118,8 +120,8 @@ public class TradeService {
         // Add USD
         user.addBalance("USD", totalUsd);
         
-        // Update price (price decreases on sell)
-        double newPrice = PriceSimulator.updatePriceOnSell(currency, amount);
+        // Apply trade impact (selling pushes price DOWN)
+        priceService.applyTradeImpact(currency, "SELL", amount);
         
         // Save user
         profileRepository.updateUser(user);
@@ -155,13 +157,13 @@ public class TradeService {
     
     // Calculate cost for buying
     public double calculateBuyCost(String currency, double amount) {
-        double price = PriceSimulator.getPrice(currency);
+        double price = priceService.getPrice(currency);
         return amount * price;
     }
     
     // Calculate revenue for selling
     public double calculateSellRevenue(String currency, double amount) {
-        double price = PriceSimulator.getPrice(currency);
+        double price = priceService.getPrice(currency);
         return amount * price;
     }
 }
