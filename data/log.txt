@@ -38,3 +38,8 @@
 2025-11-26T19:18:03Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | SELL | SELL | 0.010000 BTC @ 95095.00 USD | tx-a8564b91-c101-437a-8dfb-d0e9baf52f3a
 2025-11-26T19:23:06Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | BUY | BUY | 100.000000 USDT @ 1.00 USD | tx-b02a2d6a-4edb-4a1a-a11e-79da301fc3ed
 2025-11-26T19:23:30Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | TRANSFER | TRANSFER | 100.000000 USDT  | tx-a33de732-4272-44d7-86eb-8766bb3c788e
+2025-12-06T14:32:34Z | INFO | user-fb4b29aa-7667-4fa8-918b-0a3994b1c17d | LOGIN | User logged in: john@example.com | N/A
+2025-12-06T14:33:06Z | INFO | user-fb4b29aa-7667-4fa8-918b-0a3994b1c17d | DEPOSIT | Added 1000.00 USD to balance | N/A
+2025-12-06T14:34:54Z | INFO | user-8799f29a-9f28-47a3-86c4-e5f1b2045670 | REGISTER | New user registered: test@example.com | N/A
+2025-12-06T14:34:54Z | INFO | user-8799f29a-9f28-47a3-86c4-e5f1b2045670 | LOGIN | User logged in: test@example.com | N/A
+2025-12-06T14:41:32Z | INFO | user-03c9d50b-e83d-48b1-8705-524bce7c79c7 | LOGIN | User logged in: hj@e.com | N/A

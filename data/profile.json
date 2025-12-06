@@ -7,13 +7,42 @@
   "passwordHash" : "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
   "secretKeyHash" : "352eb735e0ba78c8c232cfc9d17b0f17cb8ccc844b2f541d85e91e13d8d1792a",
   "address" : "dcf38b61fc4c0a27e05e",
-  "balances" : {
-    "BTC" : 0.0,
-    "SOL" : 0.0,
-    "USD" : 0.0,
-    "ETH" : 0.0,
-    "USDT" : 0.0
-  },
+  "wallets" : [ {
+    "type" : "BTC",
+    "address" : "dcf38b61fc4c0a27e05e",
+    "balance" : 0.0,
+    "currency" : "BTC",
+    "createdAt" : "2025-12-06T14:31:30.307691317",
+    "lastUpdated" : "2025-12-06T14:31:30.307691317"
+  }, {
+    "type" : "SOL",
+    "address" : "dcf38b61fc4c0a27e05e",
+    "balance" : 0.0,
+    "currency" : "SOL",
+    "createdAt" : "2025-12-06T14:31:30.307691317",
+    "lastUpdated" : "2025-12-06T14:31:30.307691317"
+  }, {
+    "type" : "USD",
+    "address" : "dcf38b61fc4c0a27e05e",
+    "balance" : 1000.0,
+    "currency" : "USD",
+    "createdAt" : "2025-12-06T14:31:30.307691317",
+    "lastUpdated" : "2025-12-06T14:33:06.662415035"
+  }, {
+    "type" : "ETH",
+    "address" : "dcf38b61fc4c0a27e05e",
+    "balance" : 0.0,
+    "currency" : "ETH",
+    "createdAt" : "2025-12-06T14:31:30.307691317",
+    "lastUpdated" : "2025-12-06T14:31:30.307691317"
+  }, {
+    "type" : "USDT",
+    "address" : "dcf38b61fc4c0a27e05e",
+    "balance" : 0.0,
+    "currency" : "USDT",
+    "createdAt" : "2025-12-06T14:31:30.307691317",
+    "lastUpdated" : "2025-12-06T14:31:30.307691317"
+  } ],
   "createdAt" : "2025-11-25T23:28:41.028192629"
 }, {
   "id" : "user-df152429-fe20-4f59-841c-65f8d90d879d",
@@ -24,13 +53,42 @@
   "passwordHash" : "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
   "secretKeyHash" : "02982dfd212e1bedc79235893e940959b8048f3a56263b6db636876b362eebaf",
   "address" : "c9fa9e8976c2c104a682",
-  "balances" : {
-    "BTC" : 0.0,
-    "SOL" : 0.0,
-    "USD" : 0.0,
-    "ETH" : 0.0,
-    "USDT" : 100.0
-  },
+  "wallets" : [ {
+    "type" : "BTC",
+    "address" : "c9fa9e8976c2c104a682",
+    "balance" : 0.0,
+    "currency" : "BTC",
+    "createdAt" : "2025-12-06T14:31:30.308103122",
+    "lastUpdated" : "2025-12-06T14:31:30.308103122"
+  }, {
+    "type" : "SOL",
+    "address" : "c9fa9e8976c2c104a682",
+    "balance" : 0.0,
+    "currency" : "SOL",
+    "createdAt" : "2025-12-06T14:31:30.308103122",
+    "lastUpdated" : "2025-12-06T14:31:30.308103122"
+  }, {
+    "type" : "USD",
+    "address" : "c9fa9e8976c2c104a682",
+    "balance" : 0.0,
+    "currency" : "USD",
+    "createdAt" : "2025-12-06T14:31:30.308103122",
+    "lastUpdated" : "2025-12-06T14:31:30.308103122"
+  }, {
+    "type" : "ETH",
+    "address" : "c9fa9e8976c2c104a682",
+    "balance" : 0.0,
+    "currency" : "ETH",
+    "createdAt" : "2025-12-06T14:31:30.308103122",
+    "lastUpdated" : "2025-12-06T14:31:30.308103122"
+  }, {
+    "type" : "USDT",
+    "address" : "c9fa9e8976c2c104a682",
+    "balance" : 100.0,
+    "currency" : "USDT",
+    "createdAt" : "2025-12-06T14:31:30.308103122",
+    "lastUpdated" : "2025-12-06T14:31:30.308103122"
+  } ],
   "createdAt" : "2025-11-25T23:29:16.322940427"
 }, {
   "id" : "user-03c9d50b-e83d-48b1-8705-524bce7c79c7",
@@ -41,12 +99,87 @@
   "passwordHash" : "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
   "secretKeyHash" : "4b687ea5fd076f97ce969a0018d60d801236fb481f572cec6f6994f5b7c82926",
   "address" : "106bff2dd9f80991d0fd",
-  "balances" : {
-    "BTC" : 0.0,
-    "SOL" : 0.0,
-    "USD" : 890.9509490471471,
-    "ETH" : 0.0,
-    "USDT" : 0.0
-  },
+  "wallets" : [ {
+    "type" : "BTC",
+    "address" : "106bff2dd9f80991d0fd",
+    "balance" : 0.0,
+    "currency" : "BTC",
+    "createdAt" : "2025-12-06T14:31:30.308207440",
+    "lastUpdated" : "2025-12-06T14:31:30.308207440"
+  }, {
+    "type" : "SOL",
+    "address" : "106bff2dd9f80991d0fd",
+    "balance" : 0.0,
+    "currency" : "SOL",
+    "createdAt" : "2025-12-06T14:31:30.308207440",
+    "lastUpdated" : "2025-12-06T14:31:30.308207440"
+  }, {
+    "type" : "USD",
+    "address" : "106bff2dd9f80991d0fd",
+    "balance" : 890.9509490471471,
+    "currency" : "USD",
+    "createdAt" : "2025-12-06T14:31:30.308207440",
+    "lastUpdated" : "2025-12-06T14:31:30.308207440"
+  }, {
+    "type" : "ETH",
+    "address" : "106bff2dd9f80991d0fd",
+    "balance" : 0.0,
+    "currency" : "ETH",
+    "createdAt" : "2025-12-06T14:31:30.308207440",
+    "lastUpdated" : "2025-12-06T14:31:30.308207440"
+  }, {
+    "type" : "USDT",
+    "address" : "106bff2dd9f80991d0fd",
+    "balance" : 0.0,
+    "currency" : "USDT",
+    "createdAt" : "2025-12-06T14:31:30.308207440",
+    "lastUpdated" : "2025-12-06T14:31:30.308207440"
+  } ],
   "createdAt" : "2025-11-26T19:05:55.989377863"
+}, {
+  "id" : "user-8799f29a-9f28-47a3-86c4-e5f1b2045670",
+  "name" : "Test",
+  "lastname" : "User",
+  "email" : "test@example.com",
+  "phone" : "+9999999999",
+  "passwordHash" : "ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae",
+  "secretKeyHash" : "43a5d07e321b479293e8d104394e01e0439fe70bdde32e350e5612d8de76c312",
+  "address" : "c84a036b7f5ed940581e",
+  "wallets" : [ {
+    "type" : "USD",
+    "address" : "c84a036b7f5ed940581e",
+    "balance" : 0.0,
+    "currency" : "USD",
+    "createdAt" : "2025-12-06T14:34:54.501384135",
+    "lastUpdated" : "2025-12-06T14:34:54.501392012"
+  }, {
+    "type" : "BTC",
+    "address" : "c84a036b7f5ed940581e",
+    "balance" : 0.0,
+    "currency" : "BTC",
+    "createdAt" : "2025-12-06T14:34:54.501404920",
+    "lastUpdated" : "2025-12-06T14:34:54.501410717"
+  }, {
+    "type" : "ETH",
+    "address" : "c84a036b7f5ed940581e",
+    "balance" : 0.0,
+    "currency" : "ETH",
+    "createdAt" : "2025-12-06T14:34:54.501417507",
+    "lastUpdated" : "2025-12-06T14:34:54.501422428"
+  }, {
+    "type" : "USDT",
+    "address" : "c84a036b7f5ed940581e",
+    "balance" : 0.0,
+    "currency" : "USDT",
+    "createdAt" : "2025-12-06T14:34:54.501463791",
+    "lastUpdated" : "2025-12-06T14:34:54.501469396"
+  }, {
+    "type" : "SOL",
+    "address" : "c84a036b7f5ed940581e",
+    "balance" : 0.0,
+    "currency" : "SOL",
+    "createdAt" : "2025-12-06T14:34:54.501476090",
+    "lastUpdated" : "2025-12-06T14:34:54.501480845"
+  } ],
+  "createdAt" : "2025-12-06T14:34:54.501361587"
 } ]

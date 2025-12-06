@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 // WalletController - handles wallet operations
@@ -23,17 +24,36 @@ public class WalletController {
     @Autowired
     private WalletService walletService;
     
-    // Get user wallet
+    // Get all user wallets
     @GetMapping
     @Operation(
-        summary = "Get user wallet", 
-        description = "Retrieve wallet details with all currency balances",
+        summary = "Get all user wallets", 
+        description = "Retrieve all wallet details with balances for all currencies",
         security = @SecurityRequirement(name = "Bearer Authentication")
     )
-    public ResponseEntity<?> getWallet(Authentication authentication) {
+    public ResponseEntity<?> getAllWallets(Authentication authentication) {
         try {
             String email = authentication.getName();
-            Wallet wallet = walletService.getUserWallet(email);
+            List<Wallet> wallets = walletService.getAllWallets(email);
+            
+            return ResponseEntity.ok(wallets);
+            
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        }
+    }
+    
+    // Get wallet for specific currency
+    @GetMapping("/{currency}")
+    @Operation(
+        summary = "Get wallet for specific currency", 
+        description = "Retrieve wallet details for a specific cryptocurrency or USD",
+        security = @SecurityRequirement(name = "Bearer Authentication")
+    )
+    public ResponseEntity<?> getWallet(@PathVariable String currency, Authentication authentication) {
+        try {
+            String email = authentication.getName();
+            Wallet wallet = walletService.getUserWallet(email, currency);
             
             return ResponseEntity.ok(wallet);
             

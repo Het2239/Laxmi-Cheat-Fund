@@ -8,13 +8,48 @@
         "passwordHash": "hashed_password_here",
         "secretKeyHash": "hashed_secret_key_here",
         "address": "0x1a2b3c4d5e6f7g8h9i0j",
-        "balances": {
-            "USD": 10000.00,
-            "BTC": 0.5,
-            "ETH": 2.0,
-            "USDT": 1000.0,
-            "SOL": 50.0
-        },
+        "wallets": [
+            {
+                "type": "USD",
+                "address": "0x1a2b3c4d5e6f7g8h9i0j",
+                "balance": 10000.00,
+                "currency": "USD",
+                "createdAt": "2025-01-01T00:00:00Z",
+                "lastUpdated": "2025-01-01T00:00:00Z"
+            },
+            {
+                "type": "BTC",
+                "address": "0x1a2b3c4d5e6f7g8h9i0j",
+                "balance": 0.5,
+                "currency": "BTC",
+                "createdAt": "2025-01-01T00:00:00Z",
+                "lastUpdated": "2025-01-01T00:00:00Z"
+            },
+            {
+                "type": "ETH",
+                "address": "0x1a2b3c4d5e6f7g8h9i0j",
+                "balance": 2.0,
+                "currency": "ETH",
+                "createdAt": "2025-01-01T00:00:00Z",
+                "lastUpdated": "2025-01-01T00:00:00Z"
+            },
+            {
+                "type": "USDT",
+                "address": "0x1a2b3c4d5e6f7g8h9i0j",
+                "balance": 1000.0,
+                "currency": "USDT",
+                "createdAt": "2025-01-01T00:00:00Z",
+                "lastUpdated": "2025-01-01T00:00:00Z"
+            },
+            {
+                "type": "SOL",
+                "address": "0x1a2b3c4d5e6f7g8h9i0j",
+                "balance": 50.0,
+                "currency": "SOL",
+                "createdAt": "2025-01-01T00:00:00Z",
+                "lastUpdated": "2025-01-01T00:00:00Z"
+            }
+        ],
         "createdAt": "2025-01-01T00:00:00Z"
     }
 ]

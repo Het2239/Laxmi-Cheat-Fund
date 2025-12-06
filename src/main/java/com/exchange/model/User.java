@@ -1,8 +1,10 @@
 package com.exchange.model;
 
+import com.exchange.model.wallet.*;
+
 import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 // User - represents a user in the system
 public class User {
@@ -14,11 +16,11 @@ public class User {
     private String passwordHash;
     private String secretKeyHash;
     private String address;
-    private Map<String, Double> balances;
+    private List<Wallet> wallets;
     private String createdAt;
 
     public User() {
-        this.balances = new HashMap<>();
+        this.wallets = new ArrayList<>();
         this.createdAt = LocalDateTime.now().toString();
     }
 
@@ -32,15 +34,20 @@ public class User {
         this.passwordHash = passwordHash;
         this.secretKeyHash = secretKeyHash;
         this.address = address;
-        this.balances = new HashMap<>();
+        this.wallets = new ArrayList<>();
         this.createdAt = LocalDateTime.now().toString();
         
-        // Initialize with zero balances
-        this.balances.put("USD", 0.0);
-        this.balances.put("BTC", 0.0);
-        this.balances.put("ETH", 0.0);
-        this.balances.put("USDT", 0.0);
-        this.balances.put("SOL", 0.0);
+        // Initialize wallets for all supported currencies
+        initializeWallets();
+    }
+
+    // Initialize all currency wallets with zero balance
+    private void initializeWallets() {
+        this.wallets.add(new UsdWallet(this.address, 0.0));
+        this.wallets.add(new BtcWallet(this.address, 0.0));
+        this.wallets.add(new EthWallet(this.address, 0.0));
+        this.wallets.add(new UsdtWallet(this.address, 0.0));
+        this.wallets.add(new SolWallet(this.address, 0.0));
     }
 
     // Getters and Setters
@@ -108,12 +115,12 @@ public class User {
         this.address = address;
     }
 
-    public Map<String, Double> getBalances() {
-        return balances;
+    public List<Wallet> getWallets() {
+        return wallets;
     }
 
-    public void setBalances(Map<String, Double> balances) {
-        this.balances = balances;
+    public void setWallets(List<Wallet> wallets) {
+        this.wallets = wallets;
     }
 
     public String getCreatedAt() {
@@ -124,24 +131,42 @@ public class User {
         this.createdAt = createdAt;
     }
 
-    // Utility methods for balance management
+    // Utility methods for wallet management
+    public Wallet getWallet(String currency) {
+        return wallets.stream()
+                .filter(w -> w.getCurrency().equalsIgnoreCase(currency))
+                .findFirst()
+                .orElse(null);
+    }
+
     public Double getBalance(String currency) {
-        return balances.getOrDefault(currency, 0.0);
+        Wallet wallet = getWallet(currency);
+        return wallet != null ? wallet.getBalance() : 0.0;
     }
 
     public void setBalance(String currency, Double amount) {
-        balances.put(currency, amount);
+        Wallet wallet = getWallet(currency);
+        if (wallet != null) {
+            wallet.setBalance(amount);
+        }
     }
 
     public void addBalance(String currency, Double amount) {
-        balances.put(currency, getBalance(currency) + amount);
+        Wallet wallet = getWallet(currency);
+        if (wallet != null) {
+            wallet.deposit(amount);
+        }
     }
 
     public void deductBalance(String currency, Double amount) {
-        balances.put(currency, getBalance(currency) - amount);
+        Wallet wallet = getWallet(currency);
+        if (wallet != null) {
+            wallet.withdraw(amount);
+        }
     }
 
     public boolean hasSufficientBalance(String currency, Double amount) {
-        return getBalance(currency) >= amount;
+        Wallet wallet = getWallet(currency);
+        return wallet != null && wallet.hasSufficientBalance(amount);
     }
 }

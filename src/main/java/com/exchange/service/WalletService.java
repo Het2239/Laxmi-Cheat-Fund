@@ -7,6 +7,8 @@ import com.exchange.utils.LogWriter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 // WalletService - business logic for wallet operations
 @Service
 public class WalletService {
@@ -14,16 +16,27 @@ public class WalletService {
     @Autowired
     private ProfileRepository profileRepository;
     
-    // Get user wallet
-    public Wallet getUserWallet(String email) {
+    // Get all user wallets
+    public List<Wallet> getAllWallets(String email) {
         User user = profileRepository.findUserByEmail(email);
         if (user == null) {
             throw new RuntimeException("User not found");
         }
         
-        Wallet wallet = new Wallet();
-        wallet.setAddress(user.getAddress());
-        wallet.setBalances(user.getBalances());
+        return user.getWallets();
+    }
+    
+    // Get user wallet for specific currency
+    public Wallet getUserWallet(String email, String currency) {
+        User user = profileRepository.findUserByEmail(email);
+        if (user == null) {
+            throw new RuntimeException("User not found");
+        }
+        
+        Wallet wallet = user.getWallet(currency);
+        if (wallet == null) {
+            throw new RuntimeException("Wallet not found for currency: " + currency);
+        }
         
         return wallet;
     }
